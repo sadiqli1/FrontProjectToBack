@@ -1,0 +1,1892 @@
+﻿@{
+    ViewData["Title"] = "Juan HomePage";
+}
+
+    <main>
+        <!-- Carusel Start -->
+        <section id="carusel">
+            <div class="wrapper">
+                <div class="custom-container">
+                    <div class="owl-carousel custom-owl owl-theme">
+                        @foreach (Slider slider in ViewBag.Slider)
+                       {
+                               <div class="item" id="item">
+                            <div class="image">
+                                <img src="@slider.Image" alt="@slider.Title">
+                            </div>
+                            <div class="info">
+                                <div class="type">
+                                    <p>@slider.Info</p>
+                                </div>
+                                <div class="title">
+                                    <h2>@slider.Title</h2>
+                                </div>
+                                <div class="desc">
+                                    <p>@slider.Description</p>
+                                </div>
+                                <div class="cus-btn">
+                                    <button>@slider.Button</button>
+                                </div>
+                            </div>
+                        </div>
+                       }
+                       @* <div class="item" id="item">
+                            <div class="image">
+                                <img src="https://htmldemo.net/juan/juan/assets/img/slider/slider-1.jpg" alt="Praducts">
+                            </div>
+                            <div class="info">
+                                <div class="type">
+                                    <p>Top Selling!</p>
+                                </div>
+                                <div class="title">
+                                    <h2>New Collection</h2>
+                                </div>
+                                <div class="desc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit, sed do eiusmod
+                                        tempor incidid</p>
+                                </div>
+                                <div class="cus-btn">
+                                    <button>shop now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" id="item">
+                            <div class="image">
+                                <img src="https://htmldemo.net/juan/juan/assets/img/slider/slider-2.jpg" alt="Praducts">
+                            </div>
+                            <div class="info">
+                                <div class="type">
+                                    <p>Best Selling!</p>
+                                </div>
+                                <div class="title">
+                                    <h2>Top Collection</h2>
+                                </div>
+                                <div class="desc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit, sed do eiusmod
+                                        tempor incidid</p>
+                                </div>
+                                <div class="cus-btn">
+                                    <button>shop now</button>
+                                </div>
+                            </div>
+                        </div>*@
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Carusel End -->
+
+
+        <!-- services-area Start -->
+        <section id="services-area">
+            <div class="wrapper">
+                <div class="custom-container">
+                    <div class="row custom-row">
+                        <div class="col-lg-4 col-sm-12 col-md-12 custom-col">
+                            <div class="wrapper cream">
+                                <div class="image">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/icon/policy-1.png" alt="truck">
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <h5>free shipping</h5>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Free shipping on all order</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-12 custom-col">
+                            <div class="wrapper green">
+                                <div class="image">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/icon/policy-2.png" alt="24">
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <h5>online support</h5>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Online support 24 hours a day</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-12 custom-col">
+                            <div class="wrapper pink">
+                                <div class="image">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/icon/policy-3.png" alt="$">
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <h5>MONEY RETURN</h5>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Back guarantee under 5 days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services-area End -->
+
+        <!-- Products Start -->
+        <section id="products">
+            <div class="wrapper">
+                <div class="custom-container">
+                    <div class="title">
+                        <div>
+                            <h2>Our Product</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="owl-carousel owl-theme custom-owl-1">
+                            <div class="item">
+                                <div class="card">
+                                    <div class="image">
+                                        <a href="product.html">
+                                            <img src="https://htmldemo.net/juan/juan/assets/img/product/product-1.jpg"
+                                                alt="shoes">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <p>Leather Mens Slipper</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$80.00</span>
+                                        <del>$70.00</del>
+                                    </div>
+                                    <div class="product-action">
+                                        <ul>
+                                            <li>
+                                                <div class="tooltip wishlist">
+                                                    Wishlist
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button><i class="fa-regular fa-heart"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Add to Cart
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button
+                                                    onclick="basket(`item1`, `htmldemo.net/juan/juan/assets/img/product/product-1`, `Leather Mens Slippe`, `80.00`)"><i
+                                                        class="fa-solid fa-bag-shopping"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Quick View
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button type="button" class="btn btn-primary my-btn"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                        class="fa-regular fa-eye"></i></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="image">
+                                        <a href="product.html">
+                                            <img src="https://htmldemo.net/juan/juan/assets/img/product/product-2.jpg"
+                                                alt="shoes">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <p>Quickiin Mens shoes</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$100.00</span>
+                                        <del>$95.00</del>
+                                    </div>
+                                    <div class="product-action">
+                                        <ul>
+                                            <li>
+                                                <div class="tooltip wishlist">
+                                                    Wishlist
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button><i class="fa-regular fa-heart"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Add to Cart
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button
+                                                    onclick="basket(`item2`, `htmldemo.net/juan/juan/assets/img/product/product-2`, `Quickiin Mens shoes`, `100.00`)"><i
+                                                        class="fa-solid fa-bag-shopping"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Quick View
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button type="button" class="btn btn-primary my-btn"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                        class="fa-regular fa-eye"></i></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="image">
+                                        <a href="product.html">
+                                            <img src="https://htmldemo.net/juan/juan/assets/img/product/product-3.jpg"
+                                                alt="shoes">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <p>Rexpo Womens shoes</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$90.00</span>
+                                        <del>$75.00</del>
+                                    </div>
+                                    <div class="product-action">
+                                        <ul>
+                                            <li>
+                                                <div class="tooltip wishlist">
+                                                    Wishlist
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button><i class="fa-regular fa-heart"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Add to Cart
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button
+                                                    onclick="basket(`item3`, `htmldemo.net/juan/juan/assets/img/product/product-3`, `Rexpo Womens shoes`, `90.00`)"><i
+                                                        class="fa-solid fa-bag-shopping"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Quick View
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button type="button" class="btn btn-primary my-btn"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                        class="fa-regular fa-eye"></i></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="image">
+                                        <a href="product.html">
+                                            <img src="https://htmldemo.net/juan/juan/assets/img/product/product-4.jpg"
+                                                alt="shoes">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <p>Primitive Mens shoes</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$85.00</span>
+                                        <del>$70.00</del>
+                                    </div>
+                                    <div class="product-action">
+                                        <ul>
+                                            <li>
+                                                <div class="tooltip wishlist">
+                                                    Wishlist
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button><i class="fa-regular fa-heart"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Add to Cart
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button
+                                                    onclick="basket(`item4`, `htmldemo.net/juan/juan/assets/img/product/product-4`, `Primitive Mens shoes`, `85.00`)"><i
+                                                        class="fa-solid fa-bag-shopping"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Quick View
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button type="button" class="btn btn-primary my-btn"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                        class="fa-regular fa-eye"></i></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="image">
+                                        <a href="product.html">
+                                            <img src="https://htmldemo.net/juan/juan/assets/img/product/product-1.jpg"
+                                                alt="shoes">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <p>Leather Mens Slipper</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$80.00</span>
+                                        <del>$70.00</del>
+                                    </div>
+                                    <div class="product-action">
+                                        <ul>
+                                            <li>
+                                                <div class="tooltip wishlist">
+                                                    Wishlist
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button><i class="fa-regular fa-heart"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Add to Cart
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button
+                                                    onclick="basket(`item5`, `htmldemo.net/juan/juan/assets/img/product/product-1`, `Leather Mens Slipper`, `80.00`)"><i
+                                                        class="fa-solid fa-bag-shopping"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Quick View
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button type="button" class="btn btn-primary my-btn"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                        class="fa-regular fa-eye"></i></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="image">
+                                        <a href="product.html">
+                                            <img src="https://htmldemo.net/juan/juan/assets/img/product/product-2.jpg"
+                                                alt="shoes">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <p>Quickiin Mens shoes</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$100.00</span>
+                                        <del>$95.00</del>
+                                    </div>
+                                    <div class="product-action">
+                                        <ul>
+                                            <li>
+                                                <div class="tooltip wishlist">
+                                                    Wishlist
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button><i class="fa-regular fa-heart"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Add to Cart
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button
+                                                    onclick="basket(`item6`, `htmldemo.net/juan/juan/assets/img/product/product-2`, `Quickiin Mens shoes`, `100.00`)"><i
+                                                        class="fa-solid fa-bag-shopping"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Quick View
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button type="button" class="btn btn-primary my-btn"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                        class="fa-regular fa-eye"></i></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="image">
+                                        <a href="product.html">
+                                            <img src="https://htmldemo.net/juan/juan/assets/img/product/product-3.jpg"
+                                                alt="shoes">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <p>Rexpo Womens shoes</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$90.00</span>
+                                        <del>$75.00</del>
+                                    </div>
+                                    <div class="product-action">
+                                        <ul>
+                                            <li>
+                                                <div class="tooltip wishlist">
+                                                    Wishlist
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button><i class="fa-regular fa-heart"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Add to Cart
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button
+                                                    onclick="basket(`item7`, `htmldemo.net/juan/juan/assets/img/product/product-3`, `Rexpo Womens shoes`, `90.00`)"><i
+                                                        class="fa-solid fa-bag-shopping"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Quick View
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button type="button" class="btn btn-primary my-btn"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                        class="fa-regular fa-eye"></i></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="image">
+                                        <a href="product.html">
+                                            <img src="https://htmldemo.net/juan/juan/assets/img/product/product-4.jpg"
+                                                alt="shoes">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <p>Primitive Mens shoes</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$85.00</span>
+                                        <del>$70.00</del>
+                                    </div>
+                                    <div class="product-action">
+                                        <ul>
+                                            <li>
+                                                <div class="tooltip wishlist">
+                                                    Wishlist
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button><i class="fa-regular fa-heart"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Add to Cart
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button
+                                                    onclick="basket(`item8`, `htmldemo.net/juan/juan/assets/img/product/product-4`, `Primitive Mens shoes`, `85.00`)"><i
+                                                        class="fa-solid fa-bag-shopping"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Quick View
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button type="button" class="btn btn-primary my-btn"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                        class="fa-regular fa-eye"></i></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="image">
+                                        <a href="product.html">
+                                            <img src="https://htmldemo.net/juan/juan/assets/img/product/product-1.jpg"
+                                                alt="shoes">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <p>Leather Mens Slipper</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$80.00</span>
+                                        <del>$70.00</del>
+                                    </div>
+                                    <div class="product-action">
+                                        <ul>
+                                            <li>
+                                                <div class="tooltip wishlist">
+                                                    Wishlist
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button><i class="fa-regular fa-heart"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Add to Cart
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button
+                                                    onclick="basket(`item9`, `htmldemo.net/juan/juan/assets/img/product/product-1`, `Leather Mens Slipper`, `80.00`)"><i
+                                                        class="fa-solid fa-bag-shopping"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Quick View
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button type="button" class="btn btn-primary my-btn"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                        class="fa-regular fa-eye"></i></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="image">
+                                        <a href="product.html">
+                                            <img src="https://htmldemo.net/juan/juan/assets/img/product/product-2.jpg"
+                                                alt="shoes">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <p>Quickiin Mens shoes</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$100.00</span>
+                                        <del>$95.00</del>
+                                    </div>
+                                    <div class="product-action">
+                                        <ul>
+                                            <li>
+                                                <div class="tooltip wishlist">
+                                                    Wishlist
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button><i class="fa-regular fa-heart"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Add to Cart
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button
+                                                    onclick="basket(`item10`, `htmldemo.net/juan/juan/assets/img/product/product-2`, `Quickiin Mens shoes`, `100.00`)"><i
+                                                        class="fa-solid fa-bag-shopping"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Quick View
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button type="button" class="btn btn-primary my-btn"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                        class="fa-regular fa-eye"></i></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="image">
+                                        <a href="product.html">
+                                            <img src="https://htmldemo.net/juan/juan/assets/img/product/product-3.jpg"
+                                                alt="shoes">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <p>Rexpo Womens shoes</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$90.00</span>
+                                        <del>$75.00</del>
+                                    </div>
+                                    <div class="product-action">
+                                        <ul>
+                                            <li>
+                                                <div class="tooltip wishlist">
+                                                    Wishlist
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button><i class="fa-regular fa-heart"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Add to Cart
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button
+                                                    onclick="basket(`item11`, `htmldemo.net/juan/juan/assets/img/product/product-3`, `Rexpo Womens shoes`, `90.00`)"><i
+                                                        class="fa-solid fa-bag-shopping"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Quick View
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button type="button" class="btn btn-primary my-btn"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                        class="fa-regular fa-eye"></i></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="image">
+                                        <a href="product.html">
+                                            <img src="https://htmldemo.net/juan/juan/assets/img/product/product-4.jpg"
+                                                alt="shoes">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <p>Primitive Mens shoes</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$85.00</span>
+                                        <del>$70.00</del>
+                                    </div>
+                                    <div class="product-action">
+                                        <ul>
+                                            <li>
+                                                <div class="tooltip wishlist">
+                                                    Wishlist
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button><i class="fa-regular fa-heart"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Add to Cart
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button
+                                                    onclick="basket(`item12`, `htmldemo.net/juan/juan/assets/img/product/product-4`, `Primitive Mens shoes`, `85.00`)"><i
+                                                        class="fa-solid fa-bag-shopping"></i></button>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    Quick View
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                                <button type="button" class="btn btn-primary my-btn "
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                        class="fa-regular fa-eye"></i></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discount">
+                        <div class="custom-row">
+                            <div class="cus-col cus-col-sm-12">
+                                <div class="wrapper">
+                                    <div class="image">
+                                        <img src="https://htmldemo.net/juan/juan/assets/img/banner/banner-1.jpg"
+                                            alt="shoes">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h4>SPORTS SHOES</h4>
+                                        </div>
+                                        <div class="about">
+                                            <p>20% OFF <br> FOR SPORTS MEN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cus-col cus-col-sm-12">
+                                <div class="wrapper">
+                                    <div class="image">
+                                        <img src="https://htmldemo.net/juan/juan/assets/img/banner/banner-2.jpg"
+                                            alt="shoes">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h4>SPORTS SHOES</h4>
+                                        </div>
+                                        <div class="about">
+                                            <p>20% OFF <br> FOR SPORTS MEN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Products End -->
+
+        <!-- Top Seller Start -->
+        <section id="top-seller">
+            <div class="wrapper">
+                <div class="custom-container">
+                    <div class="cus-title">
+                        <h2>Top Seller</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="image">
+                                <img src="https://htmldemo.net/juan/juan/assets/img/banner/banner-3.jpg" alt="Shoes">
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-6 col-sm-12">
+                            <div class="row">
+                                <div class="owl-carousel owl-carousel-3 owl-theme">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="https://htmldemo.net/juan/juan/assets/img/product/pro-small-1.jpg"
+                                                            alt="Shoes">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title">
+                                                            <a href="">Simple Fabric Shoe</a>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>$70.00</span>
+                                                            <del>80.00</del>
+                                                        </div>
+                                                        <div class="review">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="tooltip wishlist">
+                                                                        Wishlist
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Add to Cart
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button
+                                                                        onclick="basket(`item13`, `htmldemo.net/juan/juan/assets/img/product/pro-small-1`, `Simple Fabric Shoe`, `70.00`)"><i
+                                                                            class="fa-solid fa-bag-shopping"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Quick View
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-primary my-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"><i
+                                                                            class="fa-regular fa-eye"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="https://htmldemo.net/juan/juan/assets/img/product/pro-small-2.jpg"
+                                                            alt="Shoes">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title">
+                                                            <a href="">exclusive mens shoe</a>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>$65.00</span>
+                                                            <del>70.00</del>
+                                                        </div>
+                                                        <div class="review">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="tooltip wishlist">
+                                                                        Wishlist
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Add to Cart
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button
+                                                                        onclick="basket(`item15`, `htmldemo.net/juan/juan/assets/img/product/pro-small-2`, `Exclusive Mens Shoe`, `65.00`)"><i
+                                                                            class="fa-solid fa-bag-shopping"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Quick View
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-primary my-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"><i
+                                                                            class="fa-regular fa-eye"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="https://htmldemo.net/juan/juan/assets/img/product/pro-small-3.jpg"
+                                                            alt="Shoes">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title">
+                                                            <a href="">Quickiin Mens shoes</a>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>$80.00</span>
+                                                            <del>100.00</del>
+                                                        </div>
+                                                        <div class="review">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="tooltip wishlist">
+                                                                        Wishlist
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Add to Cart
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button
+                                                                        onclick="basket(`item14`, `htmldemo.net/juan/juan/assets/img/product/pro-small-3`, `Quickiin Mens shoes`, `80.00`)"><i
+                                                                            class="fa-solid fa-bag-shopping"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Quick View
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-primary my-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"><i
+                                                                            class="fa-regular fa-eye"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="https://htmldemo.net/juan/juan/assets/img/product/pro-small-4.jpg"
+                                                            alt="Shoes">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title">
+                                                            <a href="">Primitive Men shoes</a>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>$75.00</span>
+                                                            <del>90.00</del>
+                                                        </div>
+                                                        <div class="review">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="tooltip wishlist">
+                                                                        Wishlist
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Add to Cart
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button
+                                                                        onclick="basket(`item16`, `htmldemo.net/juan/juan/assets/img/product/pro-small-4`, `Primitive Men Shoes`, `75.00`)"><i
+                                                                            class="fa-solid fa-bag-shopping"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Quick View
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-primary my-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"><i
+                                                                            class="fa-regular fa-eye"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="https://htmldemo.net/juan/juan/assets/img/product/pro-small-1.jpg"
+                                                            alt="Shoes">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title">
+                                                            <a href="">Simple Fabric Shoe</a>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>$70.00</span>
+                                                            <del>80.00</del>
+                                                        </div>
+                                                        <div class="review">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="tooltip wishlist">
+                                                                        Wishlist
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Add to Cart
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button
+                                                                        onclick="basket(`item13`, `htmldemo.net/juan/juan/assets/img/product/pro-small-1`, `Simple Fabric Shoe`, `70.00`)"><i
+                                                                            class="fa-solid fa-bag-shopping"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Quick View
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-primary my-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"><i
+                                                                            class="fa-regular fa-eye"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="https://htmldemo.net/juan/juan/assets/img/product/pro-small-2.jpg"
+                                                            alt="Shoes">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title">
+                                                            <a href="">exclusive mens shoe</a>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>$65.00</span>
+                                                            <del>70.00</del>
+                                                        </div>
+                                                        <div class="review">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="tooltip wishlist">
+                                                                        Wishlist
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Add to Cart
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button
+                                                                        onclick="basket(`item15`, `htmldemo.net/juan/juan/assets/img/product/pro-small-2`, `Exclusive Mens Shoe`, `65.00`)"><i
+                                                                            class="fa-solid fa-bag-shopping"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Quick View
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-primary my-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"><i
+                                                                            class="fa-regular fa-eye"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="https://htmldemo.net/juan/juan/assets/img/product/pro-small-3.jpg"
+                                                            alt="Shoes">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title">
+                                                            <a href="">Quickiin Mens shoes</a>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>$80.00</span>
+                                                            <del>100.00</del>
+                                                        </div>
+                                                        <div class="review">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="tooltip wishlist">
+                                                                        Wishlist
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Add to Cart
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button
+                                                                        onclick="basket(`item14`, `htmldemo.net/juan/juan/assets/img/product/pro-small-3`, `Quickiin Mens shoes`, `80.00`)"><i
+                                                                            class="fa-solid fa-bag-shopping"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Quick View
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-primary my-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"><i
+                                                                            class="fa-regular fa-eye"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="https://htmldemo.net/juan/juan/assets/img/product/pro-small-4.jpg"
+                                                            alt="Shoes">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title">
+                                                            <a href="">Primitive Men shoes</a>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>$75.00</span>
+                                                            <del>90.00</del>
+                                                        </div>
+                                                        <div class="review">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="tooltip wishlist">
+                                                                        Wishlist
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Add to Cart
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button
+                                                                        onclick="basket(`item16`, `htmldemo.net/juan/juan/assets/img/product/pro-small-4`, `Primitive Men Shoes`, `75.00`)"><i
+                                                                            class="fa-solid fa-bag-shopping"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Quick View
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-primary my-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"><i
+                                                                            class="fa-regular fa-eye"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="https://htmldemo.net/juan/juan/assets/img/product/pro-small-1.jpg"
+                                                            alt="Shoes">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title">
+                                                            <a href="">Simple Fabric Shoe</a>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>$70.00</span>
+                                                            <del>80.00</del>
+                                                        </div>
+                                                        <div class="review">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="tooltip wishlist">
+                                                                        Wishlist
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Add to Cart
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button
+                                                                        onclick="basket(`item40`, `htmldemo.net/juan/juan/assets/img/product/pro-small-1`, `Simple Fabric Shoe`, `70.00`)"><i
+                                                                            class="fa-solid fa-bag-shopping"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Quick View
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-primary my-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"><i
+                                                                            class="fa-regular fa-eye"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="https://htmldemo.net/juan/juan/assets/img/product/pro-small-2.jpg"
+                                                            alt="Shoes">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title">
+                                                            <a href="">exclusive mens shoe</a>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>$65.00</span>
+                                                            <del>70.00</del>
+                                                        </div>
+                                                        <div class="review">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="tooltip wishlist">
+                                                                        Wishlist
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Add to Cart
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button
+                                                                        onclick="basket(`item41`, `htmldemo.net/juan/juan/assets/img/product/pro-small-2`, `Exclusive Mens Shoe`, `65.00`)"><i
+                                                                            class="fa-solid fa-bag-shopping"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Quick View
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-primary my-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"><i
+                                                                            class="fa-regular fa-eye"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="https://htmldemo.net/juan/juan/assets/img/product/pro-small-3.jpg"
+                                                            alt="Shoes">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title">
+                                                            <a href="">Quickiin Mens shoes</a>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>$80.00</span>
+                                                            <del>100.00</del>
+                                                        </div>
+                                                        <div class="review">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="tooltip wishlist">
+                                                                        Wishlist
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Add to Cart
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button
+                                                                        onclick="basket(`item42`, `htmldemo.net/juan/juan/assets/img/product/pro-small-3`, `Quickiin Mens shoes`, `80.00`)"><i
+                                                                            class="fa-solid fa-bag-shopping"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Quick View
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-primary my-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"><i
+                                                                            class="fa-regular fa-eye"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="https://htmldemo.net/juan/juan/assets/img/product/pro-small-4.jpg"
+                                                            alt="Shoes">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title">
+                                                            <a href="">Primitive Men shoes</a>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>$75.00</span>
+                                                            <del>90.00</del>
+                                                        </div>
+                                                        <div class="review">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="tooltip wishlist">
+                                                                        Wishlist
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Add to Cart
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button
+                                                                        onclick="basket(`item43`, `htmldemo.net/juan/juan/assets/img/product/pro-small-4`, `Primitive Men Shoes`, `75.00`)"><i
+                                                                            class="fa-solid fa-bag-shopping"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Quick View
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-primary my-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"><i
+                                                                            class="fa-regular fa-eye"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="https://htmldemo.net/juan/juan/assets/img/product/pro-small-1.jpg"
+                                                            alt="Shoes">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title">
+                                                            <a href="">Simple Fabric Shoe</a>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>$70.00</span>
+                                                            <del>80.00</del>
+                                                        </div>
+                                                        <div class="review">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="tooltip wishlist">
+                                                                        Wishlist
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Add to Cart
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button
+                                                                        onclick="basket(`item44`, `htmldemo.net/juan/juan/assets/img/product/pro-small-1`, `Simple Fabric Shoe`, `70.00`)"><i
+                                                                            class="fa-solid fa-bag-shopping"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Quick View
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-primary my-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"><i
+                                                                            class="fa-regular fa-eye"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="https://htmldemo.net/juan/juan/assets/img/product/pro-small-2.jpg"
+                                                            alt="Shoes">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title">
+                                                            <a href="">exclusive mens shoe</a>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span>$65.00</span>
+                                                            <del>70.00</del>
+                                                        </div>
+                                                        <div class="review">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="product-action">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="tooltip wishlist">
+                                                                        Wishlist
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button><i class="fa-regular fa-heart"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Add to Cart
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button
+                                                                        onclick="basket(`item45`, `htmldemo.net/juan/juan/assets/img/product/pro-small-2`, `Exclusive Mens Shoe`, `65.00`)"><i
+                                                                            class="fa-solid fa-bag-shopping"></i></button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="tooltip">
+                                                                        Quick View
+                                                                        <i class="fa-solid fa-caret-down"></i>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-primary my-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"><i
+                                                                            class="fa-regular fa-eye"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Top Seller End -->
+
+        <!-- Blogs Start -->
+        <section id="blog">
+            <div class="wrapper">
+                <div class="custom-container">
+                    <div class="cus-title">
+                        <h2>Our Blog</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    </div>
+                    <div class="owl-carousel owl-theme custom-owl-2">
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="blogdetails.html">
+                                        <img src="https://htmldemo.net/juan/juan/assets/img/blog/blog-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="desc">
+                                    <div class="desc-title">
+                                        <a href="">Celebrity Daughter Opens About to Having Her Eye color</a>
+                                    </div>
+                                    <div class="desc-meta">
+                                        <ul>
+                                            <li>
+                                                <span>By: </span>
+                                                Admin,
+                                            </li>
+                                            <li>
+                                                <span>On: </span>
+                                                14.07.2029
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">Read More...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="blogdetails.html">
+                                        <img src="https://htmldemo.net/juan/juan/assets/img/blog/blog-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="desc">
+                                    <div class="desc-title">
+                                        <a href="">Sotto Winner Offering Money To Any Man That Will Date Her</a>
+                                    </div>
+                                    <div class="desc-meta">
+                                        <ul>
+                                            <li>
+                                                <span>By: </span>
+                                                Admin,
+                                            </li>
+                                            <li>
+                                                <span>On: </span>
+                                                12.05.2026
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">Read More...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="blogdetails.html">
+                                        <img src="https://htmldemo.net/juan/juan/assets/img/blog/blog-3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="desc">
+                                    <div class="desc-title">
+                                        <a href="">Children Left Home Alone For 4 Days In TV Series Experiment</a>
+                                    </div>
+                                    <div class="desc-meta">
+                                        <ul>
+                                            <li>
+                                                <span>By: </span>
+                                                Admin,
+                                            </li>
+                                            <li>
+                                                <span>On: </span>
+                                                02.11.2027
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">Read More...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="blogdetails.html">
+                                        <img src="https://htmldemo.net/juan/juan/assets/img/blog/blog-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="desc">
+                                    <div class="desc-title">
+                                        <a href="">Celebrity Daughter Opens About to Having Her Eye color</a>
+                                    </div>
+                                    <div class="desc-meta">
+                                        <ul>
+                                            <li>
+                                                <span>By: </span>
+                                                Admin,
+                                            </li>
+                                            <li>
+                                                <span>On: </span>
+                                                14.07.2029
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">Read More...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="blogdetails.html">
+                                        <img src="https://htmldemo.net/juan/juan/assets/img/blog/blog-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="desc">
+                                    <div class="desc-title">
+                                        <a href="">Sotto Winner Offering Money To Any Man That Will Date Her</a>
+                                    </div>
+                                    <div class="desc-meta">
+                                        <ul>
+                                            <li>
+                                                <span>By: </span>
+                                                Admin,
+                                            </li>
+                                            <li>
+                                                <span>On: </span>
+                                                12.05.2026
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">Read More...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="blogdetails.html">
+                                        <img src="https://htmldemo.net/juan/juan/assets/img/blog/blog-3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="desc">
+                                    <div class="desc-title">
+                                        <a href="">Children Left Home Alone For 4 Days In TV Series Experiment</a>
+                                    </div>
+                                    <div class="desc-meta">
+                                        <ul>
+                                            <li>
+                                                <span>By: </span>
+                                                Admin,
+                                            </li>
+                                            <li>
+                                                <span>On: </span>
+                                                02.11.2027
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">Read More...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="blogdetails.html">
+                                        <img src="https://htmldemo.net/juan/juan/assets/img/blog/blog-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="desc">
+                                    <div class="desc-title">
+                                        <a href="">Celebrity Daughter Opens About to Having Her Eye color</a>
+                                    </div>
+                                    <div class="desc-meta">
+                                        <ul>
+                                            <li>
+                                                <span>By: </span>
+                                                Admin,
+                                            </li>
+                                            <li>
+                                                <span>On: </span>
+                                                14.07.2029
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">Read More...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="blogdetails.html">
+                                        <img src="https://htmldemo.net/juan/juan/assets/img/blog/blog-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="desc">
+                                    <div class="desc-title">
+                                        <a href="">Sotto Winner Offering Money To Any Man That Will Date Her</a>
+                                    </div>
+                                    <div class="desc-meta">
+                                        <ul>
+                                            <li>
+                                                <span>By: </span>
+                                                Admin,
+                                            </li>
+                                            <li>
+                                                <span>On: </span>
+                                                12.05.2026
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">Read More...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="blogdetails.html">
+                                        <img src="https://htmldemo.net/juan/juan/assets/img/blog/blog-3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="desc">
+                                    <div class="desc-title">
+                                        <a href="">Children Left Home Alone For 4 Days In TV Series Experiment</a>
+                                    </div>
+                                    <div class="desc-meta">
+                                        <ul>
+                                            <li>
+                                                <span>By: </span>
+                                                Admin,
+                                            </li>
+                                            <li>
+                                                <span>On: </span>
+                                                02.11.2027
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">Read More...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand">
+                        <div class="owl-carousel owl-theme custom-owl-1">
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/brand/br1.png" alt="Brand Logo">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/brand/br2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/brand/br3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/brand/br4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/brand/br1.png" alt="Brand Logo">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/brand/br2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/brand/br3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/brand/br4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/brand/br1.png" alt="Brand Logo">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/brand/br2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/brand/br3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://htmldemo.net/juan/juan/assets/img/brand/br4.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blogs End -->
+    </main>
+

@@ -1,0 +1,1163 @@
+@import "sections/header.scss";
+@import "sections/footer.scss";
+@import "assets/mixin.scss";
+@import "assets/colors.scss";
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-weight: 400;
+}
+
+.custom-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+main {
+    #first {
+        .wrapper {
+            background-image: url("https://htmldemo.net/juan/juan/assets/img/banner/breadcrumb-banner.jpg");
+
+            .custom-container {
+                .cus-title {
+                    @include flex(center, center, column);
+                    padding: 55px 0 60px 0;
+
+                    h1 {
+                        text-transform: uppercase;
+                        font-size: 24px;
+                        padding-bottom: 15px;
+                        color: $black;
+                        margin: 0;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        color: $mainColor;
+
+                        a {
+                            text-decoration: none;
+                            color: $black;
+                            text-transform: capitalize;
+                            font-size: 16px;
+                            transition: 300ms all ease-in;
+
+                            &:hover {
+                                color: $mainColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #second {
+        .wrapper {
+            padding: 80px 0;
+
+            .custom-container {
+                .row {
+                    .col-lg-3 {
+                        .categories {
+                            margin-bottom: 35px;
+
+                            .categories-title {
+                                margin-bottom: 20px;
+
+                                h3 {
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    line-height: 1;
+                                    margin-top: -3px;
+                                    text-transform: capitalize;
+                                    color: $black;
+                                }
+                            }
+
+                            .categories-body {
+                                ul {
+                                    margin: 0;
+                                    padding: 0;
+
+                                    li {
+                                        margin-bottom: 20px;
+
+                                        a {
+                                            text-decoration: none;
+                                            font-size: 16px;
+                                            color: $black;
+                                            text-transform: capitalize;
+                                            @include flex(center, space-between);
+                                            transition: 300ms all ease-in;
+
+                                            &:hover {
+                                                color: $mainColor;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .filter {
+                            margin-bottom: 35px;
+
+                            .filter-title {
+                                margin-bottom: 20px;
+
+                                h3 {
+                                    font-size: 20px;
+                                    color: $black;
+                                    font-weight: 500;
+                                }
+                            }
+
+                            .filter-body {
+
+                                .wrapper {
+                                    display: flex;
+                                    flex-direction: column;
+                                    // justify-content: center;
+                                    // align-items: center;
+                                    padding: 0;
+                                }
+
+                                .filter-price {
+                                    width: 100%;
+                                    border: 0;
+                                    padding: 0;
+                                    margin: 0;
+                                }
+
+                                .price-title {
+                                    position: relative;
+                                    color: #fff;
+                                    font-size: 14px;
+                                    line-height: 1.2em;
+                                    font-weight: 400;
+                                }
+
+                                .price-field {
+                                    position: relative;
+                                    width: 100%;
+                                    height: 36px;
+                                    box-sizing: border-box;
+                                    // background: rgb(0, 0, 0);
+                                    @include flex(center, center);
+                                    border-radius: 3px;
+                                    padding: 0;
+                                }
+
+                                .price-field input[type=range] {
+                                    position: absolute;
+                                }
+
+                                /* Reset style for input range */
+
+                                .price-field input[type=range] {
+                                    width: 100%;
+                                    height: 2px;
+                                    border: 0;
+                                    outline: 0;
+                                    box-sizing: border-box;
+                                    border-radius: 5px;
+                                    pointer-events: none;
+                                    -webkit-appearance: none;
+                                }
+
+                                .price-field input[type=range]::-webkit-slider-thumb {
+                                    -webkit-appearance: none;
+                                }
+
+                                .price-field input[type=range]:active,
+                                .price-field input[type=range]:focus {
+                                    outline: 0;
+                                }
+
+                                .price-field input[type=range]::-ms-track {
+                                    width: 188px;
+                                    height: 2px;
+                                    border: 0;
+                                    outline: 0;
+                                    box-sizing: border-box;
+                                    border-radius: 5px;
+                                    pointer-events: none;
+                                    background: transparent;
+                                    border-color: transparent;
+                                    color: transparent;
+                                    border-radius: 5px;
+                                }
+
+                                /* Style toddler input range */
+
+                                .price-field input[type=range]::-webkit-slider-thumb {
+                                    /* WebKit/Blink */
+                                    position: relative;
+                                    -webkit-appearance: none;
+                                    margin: 0;
+                                    border: 0;
+                                    outline: 0;
+                                    border-radius: 50%;
+                                    height: 20px;
+                                    width: 20px;
+                                    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+                                    margin-top: -4px;
+                                    // background-color: #fff;
+                                    border: 6px solid #fff;
+                                    cursor: ew-resize;
+                                    cursor: ew-resize;
+                                    pointer-events: all;
+                                    z-index: 100;
+                                }
+
+                                .price-field input[type=range]::-moz-range-thumb {
+                                    /* Firefox */
+                                    position: relative;
+                                    appearance: none;
+                                    margin: 0;
+                                    border: 0;
+                                    outline: 0;
+                                    border-radius: 50%;
+                                    height: 10px;
+                                    width: 10px;
+                                    margin-top: -5px;
+                                    background-color: #fff;
+                                    cursor: pointer;
+                                    cursor: pointer;
+                                    pointer-events: all;
+                                    z-index: 100;
+                                }
+
+                                .price-field input[type=range]::-ms-thumb {
+                                    /* IE */
+                                    position: relative;
+                                    appearance: none;
+                                    margin: 0;
+                                    border: 0;
+                                    outline: 0;
+                                    border-radius: 50%;
+                                    height: 10px;
+                                    width: 10px;
+                                    margin-top: -5px;
+                                    background-color: #fff;
+                                    cursor: pointer;
+                                    cursor: pointer;
+                                    pointer-events: all;
+                                    z-index: 100;
+                                }
+
+                                /* Style track input range */
+
+                                .price-field input[type=range]::-webkit-slider-runnable-track {
+                                    /* WebKit/Blink */
+                                    width: 188px;
+                                    height: 10px;
+                                    cursor: pointer;
+                                    background: $mainColor;
+                                    border-radius: 5px;
+                                }
+
+                                .price-field input[type=range]::-moz-range-track {
+                                    /* Firefox */
+                                    width: 188px;
+                                    height: 2px;
+                                    cursor: pointer;
+                                    background: #fff;
+                                    border-radius: 5px;
+                                }
+
+                                .price-field input[type=range]::-ms-track {
+                                    /* IE */
+                                    width: 188px;
+                                    height: 2px;
+                                    cursor: pointer;
+                                    background: #fff;
+                                    border-radius: 5px;
+                                }
+
+                                /* Style for input value block */
+
+                                .price-wrap {
+                                    display: flex;
+                                    padding: 20px 0 0 0;
+                                    color: #000;
+                                    font-size: 14px;
+                                    line-height: 1.2em;
+                                    font-weight: 400;
+                                    margin-bottom: 7px;
+                                }
+
+                                .price-wrap-1,
+                                .price-wrap-2 {
+                                    display: flex;
+                                }
+
+                                .price-title {
+                                    margin-right: 5px;
+                                    color: #000;
+                                    font-size: 16px;
+                                    color: $black;
+                                    font-weight: 400;
+                                }
+
+                                .price-wrap_line {
+                                    margin: 0 10px;
+                                }
+
+                                .price-wrap #one,
+                                .price-wrap #two {
+                                    width: 30px;
+                                    text-align: right;
+                                    margin: 0;
+                                    padding: 0;
+                                    margin-right: 2px;
+                                    background: 0;
+                                    border: 0;
+                                    outline: 0;
+                                    color: $black2;
+                                    font-family: 'Karla', 'Arial', sans-serif;
+                                    font-size: 16px;
+                                    line-height: 1.2em;
+                                    font-weight: 400;
+                                }
+
+                                .price-wrap label {
+                                    text-align: right;
+                                }
+
+                                /* Style for active state input */
+
+                                .price-field input[type=range]:hover::-webkit-slider-thumb {
+                                    box-shadow: 0 0 0 0.5px #fff;
+                                    transition-duration: 0.3s;
+                                }
+
+                                .price-field input[type=range]:active::-webkit-slider-thumb {
+                                    box-shadow: 0 0 0 0.5px #fff;
+                                    transition-duration: 0.3s;
+                                }
+
+                                // .price {
+                                //     form {
+                                //         label {
+                                //             font-size: 16px;
+                                //             color: $black;
+                                //             font-weight: 400;
+                                //         }
+
+                                //         input {
+                                //             background-color: transparent;
+                                //             color: $black2;
+                                //             border: 0;
+                                //             outline: none;
+                                //             cursor: default;
+                                //             margin-bottom: 20px;
+                                //         }
+
+                                //         button {
+                                //             border: 0;
+                                //             background-color: #ebebeb;
+                                //             color: $black;
+                                //             font-size: 14px;
+                                //             font-weight: 600;
+                                //             cursor: pointer;
+                                //             text-transform: uppercase;
+                                //             line-height: 36px;
+                                //             padding: 0 15px;
+                                //             border-radius: 3px;
+                                //             transition: 300ms all ease-in;
+
+                                //             &:hover {
+                                //                 background-color: $mainColor;
+                                //                 color: #fff;
+                                //             }
+                                //         }
+                                //     }
+                                // }
+                            }
+                        }
+
+                        .colors {
+                            margin-bottom: 35px;
+
+                            .colors-title {
+                                h3 {
+                                    text-transform: capitalize;
+                                    color: $black;
+                                    font-size: 20px;
+                                }
+                            }
+
+                            .colors-body {
+                                ul {
+                                    padding: 0;
+                                    margin: 0;
+
+                                    li {
+                                        margin-bottom: 20px;
+
+                                        a {
+                                            text-decoration: none;
+                                            color: $black;
+                                            @include flex(center, space-between);
+                                            text-transform: capitalize;
+                                            font-size: 16px;
+                                            line-height: 1;
+                                            transition: 300ms all ease-in;
+
+                                            &:hover {
+                                                color: $mainColor;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .sizes {
+                            margin-bottom: 35px;
+
+                            .sizes-title {
+                                h3 {
+                                    text-transform: capitalize;
+                                    color: $black;
+                                    font-size: 20px;
+                                }
+                            }
+
+                            .sizes-body {
+                                ul {
+                                    padding: 0;
+                                    margin: 0;
+
+                                    li {
+                                        margin-bottom: 20px;
+
+                                        a {
+                                            text-decoration: none;
+                                            color: $black;
+                                            @include flex(center, space-between);
+                                            text-transform: capitalize;
+                                            font-size: 16px;
+                                            line-height: 1;
+                                            transition: 300ms all ease-in;
+
+                                            &:hover {
+                                                color: $mainColor;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .ads {
+                            width: 100%;
+                            height: 190px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+
+                    .col-lg-9 {
+                        .col-title {
+                            @include flex(center, space-between);
+                            padding: 0 0 30px 0;
+
+                            .grid {
+                                ul {
+                                    @include flex();
+                                    gap: 10px;
+                                    padding: 0;
+                                    margin: 0;
+
+                                    li {
+                                        button {
+                                            border: 0;
+                                            width: 40px;
+                                            height: 40px;
+                                            color: #fff;
+                                            background-color: #9e9e9e;
+
+                                            &:hover {
+                                                background-color: $mainColor;
+                                            }
+                                        }
+
+                                        .activ-btn {
+                                            background-color: $mainColor;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .lists {
+                                @include flex(null, null, row);
+
+                                .sort {
+                                    @include flex(null, null, row);
+
+                                    p {
+                                        margin-right: 10px;
+                                        font-size: 16px;
+                                        color: $black2;
+                                        margin-top: 5px;
+                                    }
+                                }
+
+                                .list {
+                                    .list-title {
+                                        border: 1px solid #e8e8e8;
+                                        padding: 5px 10px;
+                                        border-radius: 5px;
+                                        width: 200px;
+                                        cursor: pointer;
+
+                                        @include flex(center, space-between) p {
+                                            margin: 0;
+                                            padding: 0;
+                                            text-transform: capitalize;
+                                        }
+                                    }
+
+                                    .list-dropdown {
+                                        height: 0;
+                                        opacity: 0;
+                                        position: absolute;
+                                        z-index: 1000;
+                                        transition: 300ms all ease-in;
+                                        background-color: #fff;
+
+                                        ul {
+                                            border: 1px solid $borderColor;
+                                            border-radius: 5px;
+                                            padding: 0;
+                                            margin-left: 0;
+                                            margin-top: 5px;
+                                            width: 200px;
+
+                                            p {
+                                                font-size: 13px;
+                                                color: $black2;
+                                                background-color: #F6F6F6;
+                                                margin: 0;
+                                                padding: 10px 29px 10px 18px;
+                                                font-weight: 600;
+                                            }
+
+                                            li {
+                                                font-size: 13px;
+                                                color: $black2;
+                                                margin-bottom: 10px;
+                                                padding: 0 29px 0 18px;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .showing {
+                                    margin: 5px 0 0 20px;
+                                    color: $black2;
+                                    font-size: 16px;
+                                }
+                            }
+
+                            @media (max-width:640px) {
+                                @include flex(null, null, column-reverse);
+
+                                .lists {
+                                    @include flex(null, null, column-reverse);
+                                }
+                            }
+                        }
+
+                        .row-menu {
+                            display: none;
+
+                            .col-lg-4 {
+                                margin-bottom: 30px;
+
+                                .card {
+                                    position: relative;
+                                    z-index: 1;
+                                    transition: 400ms all linear;
+
+                                    .image {
+                                        overflow: hidden;
+                                        width: 100%;
+
+                                        img {
+                                            overflow: hidden;
+                                            transition: 400ms all linear;
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    .title {
+                                        padding: 0 0 12px 0;
+                                        text-align: center;
+
+                                        p {
+                                            font-size: 18px;
+                                            color: $black;
+                                            font-weight: 500;
+                                            margin-bottom: 0;
+                                            cursor: pointer;
+                                            transition: 300ms all ease-in;
+                                            &:hover{
+                                                color: $mainColor;
+                                            }
+                                        }
+                                    }
+
+                                    .price {
+                                        width: 100%;
+                                        text-align: center;
+                                        padding: 0 0 40px 0;
+
+                                        span {
+                                            font-size: 18px;
+                                            color: $black;
+                                        }
+
+                                        del {
+                                            font-size: 16px;
+                                            color: $black;
+                                        }
+                                    }
+
+                                    .product-action {
+                                        ul {
+                                            padding: 0;
+                                            margin: 0;
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                            gap: 15px;
+                                            position: absolute;
+                                            bottom: -23px;
+                                            left: 0;
+                                            z-index: 999999;
+
+                                            li {
+                                                transition: 400ms all linear;
+
+                                                .tooltip {
+                                                    opacity: 0;
+                                                    // display: none;
+                                                    position: absolute;
+                                                    top: -42px;
+                                                    right: -21px;
+                                                    background-color: $black;
+                                                    color: white;
+                                                    font-size: 14px;
+                                                    border-radius: 5px;
+                                                    width: max-content;
+                                                    transform: translateY(15px);
+                                                    transition: 300ms all ease-in;
+
+                                                    i {
+                                                        position: absolute;
+                                                        bottom: -12px;
+                                                        font-size: 20px;
+                                                        left: 40%;
+                                                        color: $black;
+                                                    }
+                                                }
+
+                                                .wishlist {
+                                                    top: -42px;
+                                                    right: -8px;
+                                                }
+
+                                                button {
+                                                    width: 46px;
+                                                    height: 46px;
+                                                    border-radius: 50%;
+                                                    @include flex(center, center);
+                                                    font-size: 20px;
+                                                    line-height: 46px;
+                                                    background-color: #fff;
+                                                    border: 1px solid $mainColor;
+                                                    color: $mainColor;
+                                                    transition: 300ms all ease-in;
+                                                }
+
+                                                &:hover {
+                                                    button {
+                                                        background-color: $mainColor;
+                                                        color: #fff;
+                                                    }
+
+                                                    .tooltip {
+                                                        opacity: 1;
+                                                        // display: block;
+                                                        transform: translateY(0);
+                                                    }
+                                                }
+                                            }
+
+                                            > :nth-child(1) {
+                                                transform: translateX(66px);
+                                                opacity: 0;
+                                            }
+
+                                            >:nth-child(2) {
+                                                position: relative;
+                                                z-index: 1;
+                                            }
+
+                                            > :nth-child(3) {
+                                                transform: translateX(-66px);
+                                                opacity: 0;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                > :hover {
+                                    border: 1px solid $mainColor;
+
+                                    .product-action {
+                                        ul {
+                                            > :nth-child(1) {
+                                                transform: translateX(0);
+                                                opacity: 1;
+                                            }
+
+                                            > :nth-child(3) {
+                                                transform: translateX(0);
+                                                opacity: 1;
+                                            }
+                                        }
+                                    }
+
+                                    .image {
+                                        img {
+                                            transform: scale(1.15);
+                                            overflow: hidden;
+                                        }
+                                    }
+                                }
+                            }
+
+                            > .col-12{
+                                border: 1px solid $borderColor;
+                                @include flex(center, center);
+                                margin-top: 30px;
+                                ul{
+                                    @include flex();
+                                    padding: 20px 0;
+                                    margin: 0;
+                                    gap: 10px;
+                                    li{
+                                        button{
+                                            border: 1px solid $borderColor;
+                                            width: 40px;
+                                            height: 40px;
+                                            background-color: #fff;
+                                            color: $black;
+                                            transition: 300ms all ease-in;
+                                            border-radius: 4px;
+                                            &:hover{
+                                                background-color: $mainColor;
+                                                color: #fff;
+                                            }
+                                        }
+                                        .bir{
+                                            background-color: $mainColor;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+
+                            // @media (max-width:1007px) {
+                            //     @include flex(null, null, row-reverse);
+                            // }
+
+                        }
+
+                        .row-list {
+                            display: none;
+
+                            .col-lg-12 {
+                                .card {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    padding: 15px;
+                                    border-radius: 0;
+                                    margin-bottom: 20px;
+
+                                    .card-image {
+                                        width: max-content;
+                                        border: 1px solid $borderColor;
+
+                                        img {
+                                            transition: 300ms all ease-in;
+                                            overflow: hidden;
+                                        }
+                                    }
+
+                                    .card-desc {
+                                        width: fit-content;
+                                        padding-left: 30px;
+
+                                        .card-desc-title {
+                                            a {
+                                                text-decoration: none;
+                                                color: $black;
+                                                font-size: 22px;
+                                                font-weight: 500;
+                                                transition: 300ms all ease-in;
+
+                                                &:hover {
+                                                    color: $mainColor;
+                                                }
+                                            }
+                                        }
+
+                                        .card-desc-price {
+                                            padding: 15px 0;
+
+                                            span {
+                                                font-size: 18px;
+                                                color: $black;
+                                            }
+
+                                            del {
+                                                font-size: 16px;
+                                                color: $black2;
+                                            }
+                                        }
+
+                                        .card-desc-info {
+                                            p {
+                                                font-size: 16px;
+                                                color: $black2;
+                                                padding-bottom: 25px;
+                                            }
+                                        }
+
+                                        .card-desc-action {
+                                            ul {
+                                                margin: 0;
+                                                padding: 0;
+                                                @include flex();
+                                                gap: 5px;
+
+                                                li {
+                                                    position: relative;
+                                                    .tooltip {
+                                                        opacity: 0;
+                                                        // display: none;
+                                                        position: absolute;
+                                                        top: -42px;
+                                                        right: -21px;
+                                                        background-color: $black;
+                                                        color: white;
+                                                        font-size: 14px;
+                                                        border-radius: 5px;
+                                                        width: max-content;
+                                                        transform: translateY(15px);
+                                                        transition: 300ms all ease-in;
+
+                                                        i {
+                                                            position: absolute;
+                                                            bottom: -12px;
+                                                            font-size: 20px;
+                                                            left: 40%;
+                                                            color: $black;
+                                                        }
+                                                    }
+
+                                                    .wishlist {
+                                                        top: -42px;
+                                                        right: -8px;
+                                                    }
+
+                                                    button {
+                                                        background-color: #f6f6f6;
+                                                        color: $black;
+                                                        border: 0;
+                                                        width: 44px;
+                                                        height: 44px;
+                                                        transition: 300ms all ease-in;
+                                                        border-radius: 0;
+                                                    }
+
+                                                    &:hover{
+                                                        button{
+                                                            background-color: $mainColor;
+                                                            color: #fff;
+                                                        }
+                                                        .tooltip {
+                                                            opacity: 1;
+                                                            // display: block;
+                                                            transform: translateY(0);
+                                                        }
+                                                    }   
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &:hover {
+                                        .card-image {
+                                            img {
+                                                transform: scale(1.1);
+                                            }
+                                        }
+                                    }
+
+                                    @media (max-width:640px) {
+                                        flex-direction: column;
+                                    }
+                                }
+                            }
+
+                            > .col-12{
+                                border: 1px solid $borderColor;
+                                @include flex(center, center);
+                                margin-top: 30px;
+                                ul{
+                                    @include flex();
+                                    padding: 20px 0;
+                                    margin: 0;
+                                    gap: 10px;
+                                    li{
+                                        button{
+                                            border: 1px solid $borderColor;
+                                            width: 40px;
+                                            height: 40px;
+                                            background-color: #fff;
+                                            color: $black;
+                                            transition: 300ms all ease-in;
+                                            border-radius: 4px;
+                                            &:hover{
+                                                background-color: $mainColor;
+                                                color: #fff;
+                                            }
+                                        }
+                                        .bir{
+                                            background-color: $mainColor;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .activ {
+                            display: flex;
+                            flex-direction: row-reverse;
+                        }
+                    }
+
+                    @media (max-width:1007px) {
+                        @include flex(null, null, column-reverse);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            .custom-container {
+                padding: 20px 0;
+                // margin: 0;
+
+                .row {
+                    .col-lg-5 {
+                        figure.zoom {
+                            border: 1px solid $borderColor;
+                            background-position: 50% 50%;
+                            position: relative;
+                            overflow: hidden;
+                            cursor: pointer;
+                            background-image: url("https://htmldemo.net/juan/juan/assets/img/product/product-details-img1.jpg");
+
+                            img {
+                                transition: opacity .5s;
+                                display: block;
+                                width: 100%;
+
+                                &:hover {
+                                    opacity: 0;
+                                }
+                            }
+
+                        }
+
+                        .images-lists {
+                            width: 100%;
+                            @include flex();
+                            gap: 10px;
+
+                            .img {
+                                width: 25%;
+                                border: 1px solid $borderColor;
+
+                                img {
+                                    width: 100%;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+
+                    .col-lg-7 {
+                        .product-title {
+                            h3 {
+                                font-size: 24px;
+                                font-weight: 500;
+                                padding: 0 0 10px 0;
+                                margin: 0;
+                                color: $black;
+
+                                @media (max-width:640px) {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+
+                        .product-review {
+                            a {
+                                font-size: 14px;
+                                color: $mainColor;
+                                text-decoration: none;
+                            }
+                        }
+
+                        .product-price {
+                            padding: 10px 0 0 0;
+
+                            span {
+                                font-size: 18px;
+                                color: $black;
+                                font-weight: 500;
+                            }
+
+                            del {
+                                font-size: 18px;
+                                color: $black;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .product-desc {
+                            p {
+                                padding: 15px 0 20px;
+                                font-size: 16pz;
+                                color: $black2;
+                            }
+                        }
+
+                        .product-quantity-box {
+                            @include flex();
+                            margin-bottom: 20px;
+                            gap: 30px;
+
+                            .quantity {
+                                width: 90px;
+                                height: 46px;
+                                padding: 0 15px;
+                                border: 1px solid #ddd;
+                                @include flex(center, space-between);
+
+                                span {
+                                    font-size: 22px;
+                                    color: $black2;
+                                }
+
+                                #minus,
+                                #plus {
+                                    cursor: pointer;
+                                }
+                            }
+
+                            a {
+                                @include flex(center, center);
+                                text-decoration: none;
+                                color: $mainColor;
+                                font-size: 16px;
+                                text-transform: uppercase;
+                                font-weight: 400;
+                                padding: 11px 25px;
+                                background-color: $black;
+                                transition: 300ms all ease-in;
+
+                                &:hover {
+                                    background-color: $mainColor;
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        .availability {
+                            @include flex();
+                            margin-bottom: 20px;
+
+                            h5 {
+                                font-weight: 500;
+                                color: $black;
+                                font-size: 14px;
+                                margin: 0 10px 0 0;
+                            }
+
+                            span {
+                                font-size: 14px;
+                                color: #22dd77;
+                                padding-left: 3px;
+                            }
+                        }
+
+                        .share-icons {
+                            @include flex(center);
+
+                            h5 {
+                                font-size: 14px;
+                                color: $black;
+                                font-weight: 500;
+                                margin: 0 10px 0 0;
+                            }
+
+                            a {
+                                width: 36px;
+                                height: 36px;
+                                @include flex(center, center);
+                                text-decoration: none;
+                                color: $black2;
+                                padding: 0 8px;
+                                border: 1px solid $borderColor;
+                                margin: 0 6px 0 0;
+                                transition: 300ms all ease-in;
+
+                                &:hover {
+                                    background-color: $mainColor;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
